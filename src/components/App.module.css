@@ -15,8 +15,12 @@ section {
   margin-bottom: 200px;
 } */
 
-h1 {
+h1,
+h2 {
   align-self: center;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 1.2em blue;
+  color: #6200ff;
 }
 ul {
   margin: 0 auto;
