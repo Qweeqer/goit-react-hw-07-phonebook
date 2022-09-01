@@ -14,8 +14,10 @@ export const ContactList = () => {
   const filter = useSelector(getFilter);
   const [deleteContact] = useDeleteContactMutation();
 
-  const filterContacts = contacts?.filter(contact =>
-    contact.name.toLowerCase().includes(filter.toLowerCase())
+  const filterContacts = contacts?.filter(
+    contact =>
+      contact.name.toLowerCase().includes(filter.toLowerCase()) ||
+      contact.phone.includes(filter)
   );
   return (
     <ul>
