@@ -5,7 +5,7 @@ form {
 }
 
 input {
-  width: 250px;
+  width: 70%;
   height: 30px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -13,7 +13,7 @@ input {
 }
 
 button {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   width: 80px;
   height: 30px;
   border-radius: 4px;
@@ -22,7 +22,7 @@ button {
   background-color: rgba(114, 123, 206, 0.5);
   /* background-image: linear-gradient(#076f86, yellow, #928dab); */
   /* box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.25); */
-  box-shadow: 0 2px 8px 3px rgb(6 245 212 / 97%);
+  box-shadow: 0 1px 5px 1px #ffffff;
 
   transition: transform 100ms linear, background-color 100ms linear,
     box-shadow 100ms linear, color 100ms linear;
