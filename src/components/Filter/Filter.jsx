@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
+
 import { filteredContacts, getFilter } from '../../redux/filterSlice';
+
 import './Filter.module.css';
 
 export const Filter = () => {
@@ -17,8 +18,4 @@ export const Filter = () => {
       />
     </label>
   );
-};
-
-Filter.propTypes = {
-  onFilter: PropTypes.func,
 };
