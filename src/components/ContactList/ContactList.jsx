@@ -25,14 +25,14 @@ export const ContactList = () => {
           <li key={id}>
             <p>
               {name}: {phone}
-              <button
-                className={css.listDeleteButton}
-                type="button"
-                onClick={() => deleteContact(id)}
-              >
-                Delete
-              </button>
             </p>
+            <button
+              className={css.listDeleteButton}
+              type="button"
+              onClick={() => deleteContact(id)}
+            >
+              Delete
+            </button>
           </li>
         ))}
     </ul>
