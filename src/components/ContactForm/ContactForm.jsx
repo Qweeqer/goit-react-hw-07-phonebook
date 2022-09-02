@@ -1,17 +1,11 @@
 import { useState } from 'react';
+
 import {
   useFetchContactsQuery,
   useAddContactMutation,
 } from '../../redux/contactsAPI';
-// import * as yup from 'yup';
-// import { Formik } from 'formik';
-import PropTypes from 'prop-types';
-import './ContactForm.module.css';
 
-// let schema = yup.object().shape({
-//   name: yup.string().required(),
-//   phone: yup.number().required(),
-// });
+import './ContactForm.module.css';
 
 export const ContactForm = () => {
   const [formFields, setFormFields] = useState({
@@ -36,18 +30,12 @@ export const ContactForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    const oldСontact = data.some(
-      contact =>
-        (contact.name.toLowerCase() === formFields.name.toLowerCase() &&
-          contact.phone === formFields.phone) ||
-        contact.phone === formFields.phone
-    );
+    const oldСontact = data.some(contact => contact.phone === formFields.phone);
     if (oldСontact) {
       return alert(`This phone ${formFields.phone} is already in contacts`);
     }
-    console.log('formFields', formFields);
+
     addContact(formFields);
-    // onSubmit(addContact);
     reset();
   };
 
@@ -76,9 +64,4 @@ export const ContactForm = () => {
       <button type="submit">Add contact</button>
     </form>
   );
-};
-// }
-
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func,
 };
