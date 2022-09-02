@@ -31,7 +31,7 @@ ul {
   padding: 5px;
   margin-bottom: 15px;
   display: flex;
-  width: 100%;
+  width: 95%;
   /* max-width: 571px; */
   flex-direction: column;
   /* border: groove 6px; */
@@ -41,7 +41,7 @@ ul {
 li,
 p {
   display: flex;
-  width: 100%;
+  width: 99%;
   /* max-width: 422px; */
   justify-content: space-between;
   align-items: center;
